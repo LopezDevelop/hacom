@@ -1,0 +1,27 @@
+spring:
+  config:
+    activate:
+      on-profile: default
+  data:
+    mongodb:
+      uri: mongodb+srv://localhost:27017/hacomDb
+      port: 27017
+      host: localhost
+      database: hacomDb
+      username: admin
+      password: admin
+
+server:
+  servlet:
+    context-path: /hacom-api
+  port: 9898
+  
+logging:
+  level:
+    org:
+      springframework:
+        boot:
+          autoconfigure:
+            mongo:
+              embedded: INFO
+    mongodb: INFO
