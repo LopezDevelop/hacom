@@ -1,0 +1,105 @@
+{
+	"info": {
+		"_postman_id": "81980f16-e7c1-40e4-b422-7064717d8863",
+		"name": "Hacom Evaluacion",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "getAll",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9898/hacom-api/rest/tracemsg/all",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9898",
+					"path": [
+						"hacom-api",
+						"rest",
+						"tracemsg",
+						"all"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "saveTrace",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"sessionId\": \"1989894\",\r\n\t\"payload\": \"23232hhhhjjjjjjmmmmmmm\",\r\n    \"ts\": \"2022-01-09T18:09.17.000+07:00\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9898/hacom-api/rest/tracemsg/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9898",
+					"path": [
+						"hacom-api",
+						"rest",
+						"tracemsg",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "findByRange",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"from\": \"2022-01-05T14:30:10.088+00:00\",\r\n    \"to\": \"2022-01-10T18:09.17.000+07:00\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9898/hacom-api/rest/tracemsg/findByRange",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9898",
+					"path": [
+						"hacom-api",
+						"rest",
+						"tracemsg",
+						"findByRange"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
